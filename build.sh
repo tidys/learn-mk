@@ -1,4 +1,7 @@
-NDK_ROOT=$(pwd)/android-ndk-r12b
+if [ -z "$NDK_ROOT" ]; then
+    NDK_ROOT=$(pwd)/android-ndk-r12b
+fi
+
 APP_ANDROID_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo $APP_ANDROID_ROOT
 rm -rf "$APP_ANDROID_ROOT"/obj
