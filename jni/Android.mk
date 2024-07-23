@@ -9,4 +9,6 @@ LOCAL_CFLAGS += -g
 LOCAL_CPPFLAGS += -g
 LOCAL_STRIP_MODULE :=false
 
+cmd-strip :=
+
 include $(BUILD_SHARED_LIBRARY)
